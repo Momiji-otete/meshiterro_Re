@@ -1,0 +1,8 @@
+<% if post_image.errors.any? %>
+  <h3><%= pluralize(post_image.errors.count, "error") %>!</h3>
+  <ul>
+    <% post_image.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
